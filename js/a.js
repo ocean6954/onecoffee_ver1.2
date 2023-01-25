@@ -10,51 +10,6 @@ setInterval(() => {
   }, TIMEOUT);
 }, TIMEOUT*2);
 
-// function initialize() {
-//   // var latlng = new google.maps.LatLng(41.803026,140.727661);/*表示したい場所の経度、緯度*/
-//   // var myOptions = {
-//   //   zoom: 17, /*拡大比率*/
-//   //   center: latlng, /*表示枠内の中心点*/
-//   //   mapTypeId: google.maps.MapTypeId.ROADMAP,/*表示タイプの指定*/
-//   //   mapTypeControl: false,
-//   //   fullscreenControl: false,
-//   //   // zoomControl: false,
-//   //   streetViewControl: false,
-//   //   keyboardShortcuts: false
-//   // };
-
-
-//   // var map = new google.maps.Map(document.getElementById('map'), myOptions);
-//   // var styleOptions =
-//   // [
-//   //   {
-//   //     "featureType": "landscape.natural",
-//   //     "stylers": [
-//   //       { "color": "#fff2c2" }
-//   //     ]
-//   //   },{
-//   //     "featureType": "road",
-//   //     "stylers": [
-//   //       { "color": "#ABC88B" }
-//   //       // ,{"color": "#d29f14"}
-//   //     ]
-//   //   }
-//   // ];
-
-//   // var styledMapOptions = { name: '株式会社WEB企画' }
-//   // var sampleType = new google.maps.StyledMapType(styleOptions, styledMapOptions);
-//   // map.mapTypes.set('sample', sampleType);
-//   // map.setMapTypeId('sample');
- 
-//   // var markerOptions = {
-//   //   position: latlng,/*表示場所と同じ位置に設置*/
-//   //   map: map,
-//   //   title: '1珈琲',/*マーカーのtitle*/
-//   // };
-//   // var marker = new google.maps.Marker(markerOptions);
-  
-
-// }
 
 function fadeAnime(){
   $('.animation').each(function(){
@@ -180,3 +135,13 @@ $(function() {
      nav.toggleClass('toggle');
   });
 });
+
+$(function() {
+	// setTimeout(function(){
+	// 	$('.start p').fadeIn(1600);// 1.6秒かけてフェードイン
+	// },500); //0.5秒後にロゴをフェードイン!
+	setTimeout(function(){
+		$('.start').fadeOut(500);
+	},3000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+});
+
